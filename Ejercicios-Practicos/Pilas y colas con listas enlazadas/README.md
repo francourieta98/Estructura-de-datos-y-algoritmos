@@ -93,3 +93,16 @@ Desde esta carpeta:
 javac ColaAtencionBanco.java
 java ColaAtencionBanco
 ```
+
+## Ejercicio 7: verificador de paréntesis balanceados
+
+`VerificadorParentesisBalanceados.java` recibe una expresión y revisa sus paréntesis usando una pila enlazada. Cada apertura `(` se apila. Al encontrar un cierre `)`, se desapila una apertura para emparejarla; si no había una apertura disponible, se informa que la expresión es inválida. Al final, la pila debe quedar vacía para confirmar que no haya aperturas sin cerrar.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac VerificadorParentesisBalanceados.java
+java VerificadorParentesisBalanceados
+```
