@@ -70,3 +70,20 @@ Desde esta carpeta:
 javac HistorialNavegacion.java
 java HistorialNavegacion
 ```
+
+## Ejercicio 5: pila genérica
+
+`Pila.java` implementa `Pila<T>` usando un arreglo de capacidad fija. Incluye `push`, `pop`, `peek`, `isEmpty`, `isFull` y `size`; al intentar agregar a una pila llena o quitar/consultar una vacía, lanza una excepción.
+
+El parámetro genérico `T` permite usar una sola implementación para distintos tipos, como `Pila<Integer>`, `Pila<String>` o una pila de objetos propios. El compilador comprueba que cada pila se use con su tipo declarado. En cambio, `PilaEnteros` solo almacena valores `int` y no puede reutilizarse para texto u objetos.
+
+`EjemploPilaGenerica.java` demuestra el uso con enteros, cadenas y objetos `Producto`, y explica en pantalla para qué sirven los genéricos.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac Pila.java EjemploPilaGenerica.java
+java EjemploPilaGenerica
+```
