@@ -29,3 +29,18 @@ java PilaEnteros
 ```
 
 El método `main` explica el uso de `top` y muestra las operaciones principales.
+
+## Ejercicio 2: simulador de torre de platos
+
+`SimuladorTorrePlatos.java` permite agregar un plato con un nombre o número, retirar el plato superior, consultar el plato superior y salir.
+
+La torre se representa con una pila (`Deque<String>`). El último plato que se agrega queda arriba y se retira primero (LIFO). Una cola usa el orden FIFO y retiraría primero el plato colocado al fondo, por lo que no representa el comportamiento de una torre de platos. Si la torre está vacía, el programa informa que no hay plato para retirar o consultar.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac SimuladorTorrePlatos.java
+java SimuladorTorrePlatos
+```
