@@ -78,3 +78,18 @@ Desde esta carpeta:
 javac HistorialNavegacionEnlazado.java
 java HistorialNavegacionEnlazado
 ```
+
+## Ejercicio 6: cola de atención de clientes
+
+`ColaAtencionBanco.java` simula la fila del banco usando una cola enlazada. Cada cliente almacena nombre, número de turno y motivo de consulta. El sistema permite agregar un cliente, atender al próximo, consultar quién sigue e imprimir la fila.
+
+Una cola representa el orden de atención porque sigue FIFO: el cliente que llegó primero queda al frente (`head`) y es atendido primero; cada nuevo cliente se agrega al final (`tail`). Así se respeta el orden de llegada sin que los clientes nuevos adelanten a quienes ya esperan.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac ColaAtencionBanco.java
+java ColaAtencionBanco
+```
