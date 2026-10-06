@@ -83,3 +83,18 @@ Desde esta carpeta:
 javac Ejercicio5EliminarPorValor.java
 java Ejercicio5EliminarPorValor
 ```
+
+## Ejercicio 6: eliminar un nodo por posición
+
+El ejercicio independiente está en `Ejercicio6EliminarPorPosicion.java`. Su método `void eliminarEnPosicion(int posicion)` elimina el nodo en una posición entre `0` y `size - 1`; una posición menor que `0` o mayor/igual que `size` lanza `IndexOutOfBoundsException`. Cada eliminación válida decrementa `size`. Para la posición `0`, actualiza `head`. Para otra posición, recorre hasta el nodo anterior y lo enlaza con el nodo siguiente al eliminado (`anterior.siguiente = eliminado.siguiente`).
+
+El `main` muestra eliminaciones al inicio, en medio, al final y del único nodo, además de probar la lista vacía y posiciones inválidas.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac Ejercicio6EliminarPorPosicion.java
+java Ejercicio6EliminarPorPosicion
+```
