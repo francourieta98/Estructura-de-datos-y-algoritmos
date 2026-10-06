@@ -5,7 +5,8 @@ public class SumarDigitos {
      *
      * El último dígito se obtiene con n % 10, y el número se reduce con n / 10.
      *
-     * Caso base: si n < 10, el número tiene un solo dígito y su suma es el mismo valor.
+     * Caso base: si n < 10, el número tiene un solo dígito y su suma es el mismo
+     * valor.
      *
      * @param n número entero positivo
      * @return suma de los dígitos de n
@@ -24,13 +25,14 @@ public class SumarDigitos {
     }
 
     public static void main(String[] args) {
-        int[] pruebas = {7, 25, 123, 987, 4567};
+        int[] pruebas = { 7, 25, 123, 987, 4567 };
 
         for (int valor : pruebas) {
             System.out.println("Número: " + valor + " -> Suma de dígitos: " + sumarDigitos(valor));
         }
 
         // La recursión termina cuando el número queda en un solo dígito.
-        // Una vez que n < 10, se devuelve el propio dígito y la llamada finaliza correctamente.
+        // Una vez que n < 10, se devuelve el propio dígito y la llamada finaliza
+        // correctamente.
     }
 }
