@@ -59,11 +59,24 @@ public class ListaEnlazadaSimple {
         return size;
     }
 
+    public boolean buscar(int dato) {
+        Nodo actual = head;
+        while (actual != null) {
+            if (actual.dato == dato) {
+                return true;
+            }
+            actual = actual.siguiente;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         System.out.println("Cada nodo guarda un numero entero y una referencia al siguiente nodo.");
         System.out.println("head apunta al primer nodo; si head es null, la lista esta vacia.");
         System.out.println("Cada insercion enlaza un nodo y aumenta size en uno.");
         System.out.println("Insertar al inicio actualiza head; insertar al final enlaza el nuevo nodo al ultimo.");
+        System.out.println("No se accede directamente por indice: cada nodo solo conoce al siguiente.");
+        System.out.println("Por eso buscar empieza en head y recorre nodo por nodo hasta hallar el dato o llegar a null.");
         System.out.println();
 
         ListaEnlazadaSimple lista = new ListaEnlazadaSimple();
@@ -79,5 +92,7 @@ public class ListaEnlazadaSimple {
         lista.imprimir();
         System.out.println("Esta vacia? " + lista.estaVacia());
         System.out.println("Tamano actual: " + lista.getSize());
+        System.out.println("Buscar 20: " + lista.buscar(20));
+        System.out.println("Buscar 99: " + lista.buscar(99));
     }
 }

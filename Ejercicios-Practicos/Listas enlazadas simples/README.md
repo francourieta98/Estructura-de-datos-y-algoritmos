@@ -24,3 +24,9 @@ Desde esta carpeta:
 javac ListaEnlazadaSimple.java
 java ListaEnlazadaSimple
 ```
+
+## Ejercicio 2: buscar elementos
+
+La misma clase implementa `boolean buscar(int dato)`. El método empieza en `head`, compara cada nodo con el dato buscado y avanza por la referencia `siguiente` hasta encontrarlo o llegar a `null`.
+
+Una lista enlazada simple no ofrece acceso directo por índice: cada nodo solo conoce al siguiente, no la posición ni la dirección de los demás nodos. Por eso, la búsqueda debe ser secuencial desde `head`; puede terminar al hallar el dato o después de recorrer la lista completa. El `main` muestra una búsqueda exitosa y otra fallida.
