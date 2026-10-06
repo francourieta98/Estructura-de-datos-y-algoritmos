@@ -102,3 +102,16 @@ Desde esta carpeta:
 javac ColaEnteros.java
 java ColaEnteros
 ```
+
+## Ejercicio 7: sistema de turnos para atención
+
+`SistemaTurnos.java` asigna un número consecutivo y agrega cada persona a una cola. Permite atender a la siguiente persona y consultar quién está primero. Usa FIFO: la primera persona que llega es la primera en ser atendida. Una pila LIFO atendería primero a la última persona que llegó, invirtiendo injustamente el orden de espera. Si no hay personas esperando, el programa lo informa.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac SistemaTurnos.java
+java SistemaTurnos
+```
