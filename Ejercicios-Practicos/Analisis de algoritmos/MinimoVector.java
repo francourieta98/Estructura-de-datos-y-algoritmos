@@ -28,7 +28,7 @@ public class MinimoVector {
     }
 
     public static void main(String[] args) {
-        int[] numeros = {12, -4, 8, 3, -9, 14, 0};
+        int[] numeros = { 12, -4, 8, 3, -9, 14, 0 };
 
         int minimo = encontrarMinimo(numeros);
         System.out.println("El valor mínimo del vector es: " + minimo);
