@@ -57,3 +57,16 @@ Desde esta carpeta:
 javac ValidadorParentesis.java
 java ValidadorParentesis
 ```
+
+## Ejercicio 4: historial de navegación
+
+`HistorialNavegacion.java` permite visitar una página ingresando su URL, volver a la página anterior y consultar la página actual. Cada visita se apila; al volver, se hace `pop` de la página actual y la página previa queda en la cima. Se aplica LIFO porque la página más recientemente visitada es la primera que se quita al retroceder. El programa avisa si todavía no existe una página anterior.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac HistorialNavegacion.java
+java HistorialNavegacion
+```
