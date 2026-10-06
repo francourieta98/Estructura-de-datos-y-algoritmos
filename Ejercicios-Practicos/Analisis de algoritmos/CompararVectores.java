@@ -29,8 +29,8 @@ public class CompararVectores {
     }
 
     public static void main(String[] args) {
-        int[] vector1 = {1, 2, 3, 4};
-        int[] vector2 = {1, 2, 3, 5};
+        int[] vector1 = { 1, 2, 3, 4 };
+        int[] vector2 = { 1, 2, 3, 5 };
 
         boolean iguales = sonIguales(vector1, vector2);
         System.out.println("Los vectores son iguales: " + iguales);
@@ -39,6 +39,7 @@ public class CompararVectores {
         // Si se detecta una diferencia, se corta la ejecución de inmediato.
         // Mejor caso: O(1), si difieren en la primera posición.
         // Peor caso: O(n), si todos los elementos coinciden hasta el final.
-        // Caso promedio: O(n), porque la comparación a lo largo del arreglo sigue siendo lineal.
+        // Caso promedio: O(n), porque la comparación a lo largo del arreglo sigue
+        // siendo lineal.
     }
 }
