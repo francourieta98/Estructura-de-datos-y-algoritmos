@@ -39,7 +39,7 @@ Aunque el método recibe una posición, la lista no funciona como un arreglo: no
 
 ## Ejercicio 4: insertar un nodo en una posición específica
 
-`void insertarEnPosicion(int dato, int posicion)` inserta antes del nodo que actualmente ocupa `posicion`. Se permite cualquier posición entre `0` y `size`, inclusive: `0` inserta al inicio, `size` inserta al final y los valores intermedios insertan en medio. Una posición menor que `0` o mayor que `size` lanza `IndexOutOfBoundsException`.
+El ejercicio independiente está en `Ejercicio4InsertarEnPosicion.java`. Su método `void insertarEnPosicion(int dato, int posicion)` inserta antes del nodo que actualmente ocupa `posicion`. Se permite cualquier posición entre `0` y `size`, inclusive: `0` inserta al inicio, `size` inserta al final y los valores intermedios insertan en medio. Una posición menor que `0` o mayor que `size` lanza `IndexOutOfBoundsException`.
 
 Para insertar después de un nodo `actual`, primero se conserva la continuación de la lista enlazando el nuevo nodo con el sucesor:
 
@@ -48,4 +48,13 @@ nuevo.setSiguiente(actual.getSiguiente());
 actual.setSiguiente(nuevo);
 ```
 
-Si se cambia el orden y se apunta `actual` a `nuevo` antes de guardar su sucesor, la referencia al resto de la lista se puede perder; luego `nuevo.getSiguiente()` incluso podría apuntar a sí mismo y formar un ciclo. El `main` demuestra inserciones al inicio, en medio y al final, además de una posición inválida.
+Si se cambia el orden y se apunta `actual` a `nuevo` antes de guardar su sucesor, la referencia al resto de la lista se puede perder; luego `nuevo.getSiguiente()` incluso podría apuntar a sí mismo y formar un ciclo. El `main` demuestra inserciones al inicio, en medio y al final, además de posiciones inválidas.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac Ejercicio4InsertarEnPosicion.java
+java Ejercicio4InsertarEnPosicion
+```
