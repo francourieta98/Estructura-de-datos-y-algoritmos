@@ -45,7 +45,7 @@ public class DetectarDuplicados {
     }
 
     public static void main(String[] args) {
-        int[] vector = {4, 2, 7, 2, 9, 1, 5};
+        int[] vector = { 4, 2, 7, 2, 9, 1, 5 };
 
         boolean conDobleFor = tieneDuplicadoDobleFor(vector);
         boolean conHashSet = tieneDuplicadoHashSet(vector);
@@ -56,7 +56,8 @@ public class DetectarDuplicados {
         // Comparación de complejidad:
         // - Dos ciclos anidados: O(n^2) temporal y O(1) espacial.
         // - HashSet: O(n) temporal en promedio y O(n) espacial.
-        // El HashSet suele ser más eficiente para vectores grandes, mientras que el doble for
+        // El HashSet suele ser más eficiente para vectores grandes, mientras que el
+        // doble for
         // es más simple pero cuesta más tiempo cuando el tamaño aumenta.
     }
 }
