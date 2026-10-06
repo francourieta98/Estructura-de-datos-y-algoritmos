@@ -147,3 +147,18 @@ Desde esta carpeta:
 javac Ejercicio9InvertirLista.java
 java Ejercicio9InvertirLista
 ```
+
+## Ejercicio 10: lista enlazada genérica
+
+El ejercicio independiente está en `Ejercicio10ListaGenerica.java` e implementa `ListaEnlazada<T>` con nodos `Nodo<T>`. El ejemplo la utiliza como `ListaEnlazada<Integer>`, `ListaEnlazada<String>` y `ListaEnlazada<Alumno>`.
+
+Al generalizar, el tipo del dato cambia de `int` a `T`, y las referencias a nodos pasan a ser `Nodo<T>`. La comparación se realiza con `Objects.equals`, apropiada para comparar tanto objetos como valores nulos. Se conservan `head`, `siguiente`, `size` y los pasos de enlace y recorrido. Insertar y eliminar solo conectan nodos y actualizan referencias/tamaño; no hacen operaciones específicas sobre el tipo del dato, así que el algoritmo es el mismo para enteros, cadenas u objetos.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac Ejercicio10ListaGenerica.java
+java Ejercicio10ListaGenerica
+```
