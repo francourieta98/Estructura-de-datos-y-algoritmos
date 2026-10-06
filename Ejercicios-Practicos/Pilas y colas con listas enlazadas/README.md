@@ -48,3 +48,18 @@ Desde esta carpeta:
 javac PilaEnlazadaGenerica.java
 java PilaEnlazadaGenerica
 ```
+
+## Ejercicio 4: cola genérica
+
+`ColaEnlazadaGenerica.java` implementa `Cola<T>` con nodos `Nodo<T>` y referencias `head` y `tail`. Se prueba con una cola de nombres (`String`) y una cola de objetos `Cliente`.
+
+El tipo `T` cambia qué valor guarda cada nodo, pero no cambia las referencias ni el orden de las operaciones: `encolar` agrega al final (`tail`) y `desencolar` quita del frente (`head`). Por eso FIFO se mantiene igual para nombres y objetos. La clase también permite consultar el frente, verificar si está vacía, buscar e imprimir.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac ColaEnlazadaGenerica.java
+java ColaEnlazadaGenerica
+```
