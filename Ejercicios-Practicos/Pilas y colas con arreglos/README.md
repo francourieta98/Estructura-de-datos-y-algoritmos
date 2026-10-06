@@ -141,3 +141,16 @@ Desde esta carpeta:
 javac ColaLinealDesperdicio.java
 java ColaLinealDesperdicio
 ```
+
+## Ejercicio 10: cola circular
+
+`ColaCircular.java` implementa una cola circular de enteros usando un arreglo. Los índices avanzan con módulo capacidad: `(rear + 1) % capacidad` al encolar y `(front + 1) % capacidad` al desencolar. El resto `%` hace que, al alcanzar el final del arreglo, el índice vuelva a cero y pueda reutilizar espacios libres al inicio. La cola está vacía cuando `size == 0` y llena cuando `size == capacidad`. El ejemplo muestra el arreglo e índices para ilustrar el recorrido circular.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac ColaCircular.java
+java ColaCircular
+```
