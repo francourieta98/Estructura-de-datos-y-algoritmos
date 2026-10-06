@@ -115,3 +115,16 @@ Desde esta carpeta:
 javac SistemaTurnos.java
 java SistemaTurnos
 ```
+
+## Ejercicio 8: cola de impresión
+
+`ColaImpresion.java` permite agregar documentos con nombre y cantidad de páginas, imprimir el siguiente y consultar cuál sigue. Los documentos se agregan al final de la cola y se imprimen desde el frente. FIFO hace que el primero agregado sea el primero impreso, conservando el orden de llegada. La cantidad de páginas debe ser un entero positivo.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac ColaImpresion.java
+java ColaImpresion
+```
