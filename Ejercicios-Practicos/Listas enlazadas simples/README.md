@@ -126,3 +126,24 @@ Desde esta carpeta:
 javac Ejercicio8ContarOcurrencias.java
 java Ejercicio8ContarOcurrencias
 ```
+
+## Ejercicio 9: invertir una lista enlazada simple
+
+El ejercicio independiente está en `Ejercicio9InvertirLista.java`. El método `void invertir()` recorre y cambia las referencias `siguiente` de cada nodo, y al final actualiza `head`.
+
+Usa tres referencias auxiliares:
+
+- `anterior`: el nodo previo en la lista ya invertida.
+- `actual`: el nodo cuyo enlace se está procesando.
+- `siguiente`: guarda el resto de la lista antes de cambiar el enlace.
+
+El orden es fundamental: primero se guarda `siguiente = actual.siguiente`, luego se invierte el enlace con `actual.siguiente = anterior` y después avanzan `anterior` y `actual`. Si no se guarda `siguiente` antes de cambiar la referencia, se pierde el acceso a los nodos pendientes. El ejemplo invierte `10 -> 20 -> 30 -> 40 -> null`.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac Ejercicio9InvertirLista.java
+java Ejercicio9InvertirLista
+```
