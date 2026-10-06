@@ -87,3 +87,18 @@ Desde esta carpeta:
 javac Pila.java EjemploPilaGenerica.java
 java EjemploPilaGenerica
 ```
+
+## Ejercicio 6: cola simple de enteros
+
+`ColaEnteros.java` implementa una cola circular de capacidad fija con `enqueue`, `dequeue`, `front`, `isEmpty`, `isFull` y `size`. `front` señala el primer elemento, que será el próximo en salir; `rear` señala el último elemento agregado. Al encolar avanza `rear`, y al desencolar avanza `front`. Ambos índices regresan al inicio del arreglo al alcanzar el final. Cuando se elimina el último elemento, ambos vuelven a `-1`.
+
+Si se intenta agregar a una cola llena, se lanza `IllegalStateException`; si se intenta retirar o consultar una cola vacía, se lanza `NoSuchElementException`. El método `main` explica los índices y muestra también cómo la cola circular reutiliza el espacio liberado.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac ColaEnteros.java
+java ColaEnteros
+```
