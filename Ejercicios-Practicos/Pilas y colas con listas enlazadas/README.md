@@ -16,3 +16,20 @@ Desde esta carpeta:
 javac PilaEnlazadaEnteros.java
 java PilaEnlazadaEnteros
 ```
+
+## Ejercicio 2: cola enlazada de enteros
+
+`ColaEnlazadaEnteros.java` implementa una cola con operaciones para encolar, desencolar, consultar el frente, verificar si está vacía, buscar un valor e imprimir el contenido.
+
+Mantiene dos referencias: `head` apunta al frente, que es el próximo nodo en salir, y `tail` apunta al último nodo, donde se agrega el siguiente elemento. Esto permite encolar y desencolar en O(1). Si solo se mantuviera `head`, cada encolado tendría que recorrer todos los nodos para encontrar el final, y costaría O(n). Cuando se desencola el último nodo, ambas referencias se restablecen a `null`.
+
+Desencolar o consultar el frente cuando la cola está vacía lanza `NoSuchElementException`. El `main` demuestra también que la cola puede volver a usarse después de quedar vacía.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac ColaEnlazadaEnteros.java
+java ColaEnlazadaEnteros
+```
