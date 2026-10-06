@@ -106,3 +106,16 @@ Desde esta carpeta:
 javac VerificadorParentesisBalanceados.java
 java VerificadorParentesisBalanceados
 ```
+
+## Ejercicio 8: invertir una palabra con pila
+
+`InvertirPalabraConPila.java` apila cada carácter de la palabra de izquierda a derecha y luego los desapila para construir el resultado. La política LIFO devuelve primero el último carácter agregado, invirtiendo así el orden. La pila se implementa con nodos enlazados propios.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac InvertirPalabraConPila.java
+java InvertirPalabraConPila
+```
