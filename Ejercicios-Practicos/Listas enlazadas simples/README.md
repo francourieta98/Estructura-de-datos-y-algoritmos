@@ -27,15 +27,25 @@ java ListaEnlazadaSimple
 
 ## Ejercicio 2: buscar elementos
 
-La misma clase implementa `boolean buscar(int dato)`. El método empieza en `head`, compara cada nodo con el dato buscado y avanza por la referencia `siguiente` hasta encontrarlo o llegar a `null`.
+El ejercicio independiente está en `Ejercicio2BuscarElemento.java`, que implementa `boolean buscar(int dato)`. El método empieza en `head`, compara cada nodo con el dato buscado y avanza por la referencia `siguiente` hasta encontrarlo o llegar a `null`.
 
 Una lista enlazada simple no ofrece acceso directo por índice: cada nodo solo conoce al siguiente, no la posición ni la dirección de los demás nodos. Por eso, la búsqueda debe ser secuencial desde `head`; puede terminar al hallar el dato o después de recorrer la lista completa. El `main` muestra una búsqueda exitosa y otra fallida.
 
+```text
+javac Ejercicio2BuscarElemento.java
+java Ejercicio2BuscarElemento
+```
+
 ## Ejercicio 3: obtener un elemento por posición
 
-`int obtener(int posicion)` devuelve el dato de la posición solicitada, considerando que la primera posición es `0`. Si `posicion < 0` o `posicion >= size`, lanza `IndexOutOfBoundsException`.
+El ejercicio independiente está en `Ejercicio3ObtenerElemento.java`. Su método `int obtener(int posicion)` devuelve el dato de la posición solicitada, considerando que la primera posición es `0`. Si `posicion < 0` o `posicion >= size`, lanza `IndexOutOfBoundsException`.
 
 Aunque el método recibe una posición, la lista no funciona como un arreglo: no puede saltar directamente a un índice. Comienza en `head` y avanza nodo por nodo hasta alcanzar la posición indicada. El `main` muestra una posición válida y ambas condiciones inválidas.
+
+```text
+javac Ejercicio3ObtenerElemento.java
+java Ejercicio3ObtenerElemento
+```
 
 ## Ejercicio 4: insertar un nodo en una posición específica
 
