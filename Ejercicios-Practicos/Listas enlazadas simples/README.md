@@ -98,3 +98,18 @@ Desde esta carpeta:
 javac Ejercicio6EliminarPorPosicion.java
 java Ejercicio6EliminarPorPosicion
 ```
+
+## Ejercicio 7: modificar un elemento de la lista
+
+El ejercicio independiente está en `Ejercicio7ModificarElemento.java`. Su método `void modificar(int posicion, int nuevoDato)` valida primero que `0 <= posicion < size`; si no, lanza `IndexOutOfBoundsException`. Después recorre los nodos desde `head` hasta la posición y cambia el campo `dato`.
+
+Modificar `dato` reemplaza el valor almacenado y conserva los enlaces. En cambio, modificar `siguiente` cambia la referencia al próximo nodo y puede alterar o romper la estructura de la lista. El ejemplo modifica un elemento y prueba posiciones inválidas.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac Ejercicio7ModificarElemento.java
+java Ejercicio7ModificarElemento
+```
