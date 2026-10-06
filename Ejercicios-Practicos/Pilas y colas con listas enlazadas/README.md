@@ -63,3 +63,18 @@ Desde esta carpeta:
 javac ColaEnlazadaGenerica.java
 java ColaEnlazadaGenerica
 ```
+
+## Ejercicio 5: historial de navegación con pila
+
+`HistorialNavegacionEnlazado.java` implementa un historial con una pila enlazada de URLs. Permite visitar una página, volver (desapilar la más reciente), consultar la página actual e imprimir el historial desde la actual hacia las anteriores.
+
+Una pila representa "volver atrás" porque la página visitada más recientemente es la primera que se quita: sigue el orden LIFO. Si el historial queda vacío, el programa informa que no hay página actual o anterior.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac HistorialNavegacionEnlazado.java
+java HistorialNavegacionEnlazado
+```
