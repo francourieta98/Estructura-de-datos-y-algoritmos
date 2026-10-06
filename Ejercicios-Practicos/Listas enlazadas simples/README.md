@@ -36,3 +36,16 @@ Una lista enlazada simple no ofrece acceso directo por índice: cada nodo solo c
 `int obtener(int posicion)` devuelve el dato de la posición solicitada, considerando que la primera posición es `0`. Si `posicion < 0` o `posicion >= size`, lanza `IndexOutOfBoundsException`.
 
 Aunque el método recibe una posición, la lista no funciona como un arreglo: no puede saltar directamente a un índice. Comienza en `head` y avanza nodo por nodo hasta alcanzar la posición indicada. El `main` muestra una posición válida y ambas condiciones inválidas.
+
+## Ejercicio 4: insertar un nodo en una posición específica
+
+`void insertarEnPosicion(int dato, int posicion)` inserta antes del nodo que actualmente ocupa `posicion`. Se permite cualquier posición entre `0` y `size`, inclusive: `0` inserta al inicio, `size` inserta al final y los valores intermedios insertan en medio. Una posición menor que `0` o mayor que `size` lanza `IndexOutOfBoundsException`.
+
+Para insertar después de un nodo `actual`, primero se conserva la continuación de la lista enlazando el nuevo nodo con el sucesor:
+
+```text
+nuevo.setSiguiente(actual.getSiguiente());
+actual.setSiguiente(nuevo);
+```
+
+Si se cambia el orden y se apunta `actual` a `nuevo` antes de guardar su sucesor, la referencia al resto de la lista se puede perder; luego `nuevo.getSiguiente()` incluso podría apuntar a sí mismo y formar un ciclo. El `main` demuestra inserciones al inicio, en medio y al final, además de una posición inválida.
