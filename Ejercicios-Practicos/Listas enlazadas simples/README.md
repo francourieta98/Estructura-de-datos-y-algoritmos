@@ -68,3 +68,18 @@ Desde esta carpeta:
 javac Ejercicio4InsertarEnPosicion.java
 java Ejercicio4InsertarEnPosicion
 ```
+
+## Ejercicio 5: eliminar un nodo por valor
+
+El ejercicio independiente está en `Ejercicio5EliminarPorValor.java`. Su método `boolean eliminar(int dato)` elimina solo la primera aparición y devuelve `true` si encontró el dato o `false` si la lista está vacía o el valor no existe. Actualiza `head` al eliminar el primer nodo; para los demás, enlaza el nodo anterior con el siguiente y decrementa el tamaño.
+
+En Java no se borra manualmente la memoria del nodo. Al desconectarlo de la cadena, queda inaccesible desde la lista y el Garbage Collector puede recuperarlo cuando corresponda. El ejemplo demuestra lista vacía, eliminación del primer nodo, uno del medio, el último y un valor inexistente.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac Ejercicio5EliminarPorValor.java
+java Ejercicio5EliminarPorValor
+```
