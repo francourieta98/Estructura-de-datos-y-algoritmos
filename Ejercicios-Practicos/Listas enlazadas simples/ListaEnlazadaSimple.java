@@ -70,6 +70,18 @@ public class ListaEnlazadaSimple {
         return false;
     }
 
+    public int obtener(int posicion) {
+        if (posicion < 0 || posicion >= size) {
+            throw new IndexOutOfBoundsException("Posicion fuera de los limites: " + posicion);
+        }
+
+        Nodo actual = head;
+        for (int indice = 0; indice < posicion; indice++) {
+            actual = actual.siguiente;
+        }
+        return actual.dato;
+    }
+
     public static void main(String[] args) {
         System.out.println("Cada nodo guarda un numero entero y una referencia al siguiente nodo.");
         System.out.println("head apunta al primer nodo; si head es null, la lista esta vacia.");
@@ -77,6 +89,7 @@ public class ListaEnlazadaSimple {
         System.out.println("Insertar al inicio actualiza head; insertar al final enlaza el nuevo nodo al ultimo.");
         System.out.println("No se accede directamente por indice: cada nodo solo conoce al siguiente.");
         System.out.println("Por eso buscar empieza en head y recorre nodo por nodo hasta hallar el dato o llegar a null.");
+        System.out.println("obtener(posicion) tambien recorre desde head; la posicion no permite saltar directamente como en un arreglo.");
         System.out.println();
 
         ListaEnlazadaSimple lista = new ListaEnlazadaSimple();
@@ -94,5 +107,16 @@ public class ListaEnlazadaSimple {
         System.out.println("Tamano actual: " + lista.getSize());
         System.out.println("Buscar 20: " + lista.buscar(20));
         System.out.println("Buscar 99: " + lista.buscar(99));
+        System.out.println("Dato en la posicion 1: " + lista.obtener(1));
+        try {
+            lista.obtener(-1);
+        } catch (IndexOutOfBoundsException excepcion) {
+            System.out.println(excepcion.getMessage());
+        }
+        try {
+            lista.obtener(lista.getSize());
+        } catch (IndexOutOfBoundsException excepcion) {
+            System.out.println(excepcion.getMessage());
+        }
     }
 }
