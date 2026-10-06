@@ -1,13 +1,15 @@
 public class BusquedaVectorDesordenado {
 
     /**
-     * Busca un elemento dentro de un arreglo desordenado mediante búsqueda secuencial.
+     * Busca un elemento dentro de un arreglo desordenado mediante búsqueda
+     * secuencial.
      * El método devuelve la posición en la que se encontró el elemento y también
      * informa cuántas posiciones fueron recorridas.
      *
-     * @param vector arreglo desordenado
+     * @param vector  arreglo desordenado
      * @param buscado valor a buscar
-     * @return un arreglo con dos valores: [posiciónEncontrada, posicionesRecorridas]
+     * @return un arreglo con dos valores: [posiciónEncontrada,
+     *         posicionesRecorridas]
      *         si no se encuentra, la posición será -1
      * @throws IllegalArgumentException si el arreglo es nulo
      */
@@ -30,7 +32,7 @@ public class BusquedaVectorDesordenado {
     }
 
     public static void main(String[] args) {
-        int[] vector = {9, 4, 7, 1, 8, 3, 6, 5};
+        int[] vector = { 9, 4, 7, 1, 8, 3, 6, 5 };
         int buscado = 8;
 
         int[] resultado = buscarElemento(vector, buscado);
@@ -48,6 +50,7 @@ public class BusquedaVectorDesordenado {
         // aquí porque requiere que el arreglo esté ordenado.
         // Mejor caso: O(1), si el elemento está en la primera posición.
         // Peor caso: O(n), si el elemento está al final o no existe.
-        // Caso promedio: O(n), ya que en promedio se recorre una parte importante del vector.
+        // Caso promedio: O(n), ya que en promedio se recorre una parte importante del
+        // vector.
     }
 }
