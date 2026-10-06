@@ -44,18 +44,20 @@ public class InvertirVector {
     }
 
     public static void main(String[] args) {
-        int[] vector = {1, 2, 3, 4, 5};
+        int[] vector = { 1, 2, 3, 4, 5 };
 
         int[] invertidoAux = invertirConAuxiliar(vector);
         System.out.println("Con vector auxiliar: " + Arrays.toString(invertidoAux));
 
-        int[] vectorInPlace = {1, 2, 3, 4, 5};
+        int[] vectorInPlace = { 1, 2, 3, 4, 5 };
         invertirInPlace(vectorInPlace);
         System.out.println("In-place: " + Arrays.toString(vectorInPlace));
 
         // Comparación:
-        // - Con vector auxiliar: más simple de entender, pero usa O(n) de memoria adicional.
+        // - Con vector auxiliar: más simple de entender, pero usa O(n) de memoria
+        // adicional.
         // - In-place: más eficiente en memoria, porque usa O(1) de espacio extra.
-        // Ambas tienen O(n) de tiempo, pero la variante in-place es preferible cuando se quiere ahorrar memoria.
+        // Ambas tienen O(n) de tiempo, pero la variante in-place es preferible cuando
+        // se quiere ahorrar memoria.
     }
 }
