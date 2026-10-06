@@ -128,3 +128,16 @@ Desde esta carpeta:
 javac ColaImpresion.java
 java ColaImpresion
 ```
+
+## Ejercicio 9: desperdicio de espacio en una cola lineal
+
+`ColaLinealDesperdicio.java` usa una cola simple, no circular. El programa muestra el arreglo y los índices luego de encolar cinco valores y desencolar dos. Los espacios liberados al inicio quedan vacíos, pero no se pueden reutilizar porque `rear` solo avanza hacia el final del arreglo. Por eso, un nuevo `enqueue` falla aunque haya lugares libres antes de `front`. A diferencia de esta demostración, `ColaEnteros.java` del ejercicio 6 sí es circular y reutiliza esos espacios.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac ColaLinealDesperdicio.java
+java ColaLinealDesperdicio
+```
