@@ -44,3 +44,16 @@ Desde esta carpeta:
 javac SimuladorTorrePlatos.java
 java SimuladorTorrePlatos
 ```
+
+## Ejercicio 3: validar paréntesis balanceados
+
+`ValidadorParentesis.java` recibe una expresión matemática y determina si sus paréntesis están balanceados. Recorre la expresión y guarda cada paréntesis abierto `(` en una pila. Cada vez que encuentra un paréntesis cerrado `)`, realiza `pop` para emparejarlo con el último abierto. Si no hay ninguno que emparejar, o quedan abiertos al terminar, el resultado es inválido.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac ValidadorParentesis.java
+java ValidadorParentesis
+```
