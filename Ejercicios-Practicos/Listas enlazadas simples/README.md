@@ -113,3 +113,16 @@ Desde esta carpeta:
 javac Ejercicio7ModificarElemento.java
 java Ejercicio7ModificarElemento
 ```
+
+## Ejercicio 8: contar ocurrencias de un valor
+
+El ejercicio independiente está en `Ejercicio8ContarOcurrencias.java`. El método `int contarOcurrencias(int dato)` recorre desde `head` hasta `null`, suma uno por cada nodo cuyo dato coincide y devuelve el total. No termina en la primera coincidencia porque puede haber más apariciones en los nodos siguientes. El `main` reproduce la lista `10 -> 20 -> 10 -> 30 -> 10 -> null` y muestra que el valor `10` aparece tres veces.
+
+### Compilar y ejecutar
+
+Desde esta carpeta:
+
+```text
+javac Ejercicio8ContarOcurrencias.java
+java Ejercicio8ContarOcurrencias
+```
