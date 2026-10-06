@@ -25,7 +25,7 @@ public class SumaRecursiva {
     }
 
     public static void main(String[] args) {
-        int[] valoresPrueba = {0, 1, 5, 10, 15};
+        int[] valoresPrueba = { 0, 1, 5, 10, 15 };
 
         for (int valor : valoresPrueba) {
             System.out.println("suma(" + valor + ") = " + suma(valor));

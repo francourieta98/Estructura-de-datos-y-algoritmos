@@ -13,7 +13,7 @@ public class PotenciaRecursiva {
      * elevado a 0 es 1.
      *
      * @param base número base
-     * @param exp exponente no negativo
+     * @param exp  exponente no negativo
      * @return base elevado a exp
      * @throws IllegalArgumentException si el exponente es negativo
      */
@@ -31,11 +31,11 @@ public class PotenciaRecursiva {
 
     public static void main(String[] args) {
         int[][] pruebas = {
-            {2, 0},
-            {5, 1},
-            {3, 2},
-            {4, 3},
-            {2, 5}
+                { 2, 0 },
+                { 5, 1 },
+                { 3, 2 },
+                { 4, 3 },
+                { 2, 5 }
         };
 
         for (int[] prueba : pruebas) {
@@ -45,6 +45,7 @@ public class PotenciaRecursiva {
         }
 
         // La recursión termina cuando el exponente llega a 0 y devuelve 1.
-        // Así se evita una llamada infinita y se garantiza que el problema se reduzca cada vez.
+        // Así se evita una llamada infinita y se garantiza que el problema se reduzca
+        // cada vez.
     }
 }

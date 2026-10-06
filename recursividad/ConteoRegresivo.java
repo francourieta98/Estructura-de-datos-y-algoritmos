@@ -6,7 +6,8 @@ public class ConteoRegresivo {
      * Esta función no devuelve un valor, sino que realiza una tarea de salida.
      * Su objetivo es imprimir números por pantalla.
      *
-     * El caso base es cuando n == 0, porque allí se imprime 0 y termina la recursión.
+     * El caso base es cuando n == 0, porque allí se imprime 0 y termina la
+     * recursión.
      * En cada llamada se reduce el valor con n - 1 para acercarse al caso base.
      *
      * @param n valor inicial del conteo
@@ -35,7 +36,9 @@ public class ConteoRegresivo {
         System.out.println("\nConteo desde 0:");
         conteoRegresivo(0);
 
-        // Si se usara n + 1 en lugar de n - 1, la función nunca se acercaría al caso base.
-        // Eso haría que la recursión no terminara y eventualmente provocaría un desbordamiento de pila.
+        // Si se usara n + 1 en lugar de n - 1, la función nunca se acercaría al caso
+        // base.
+        // Eso haría que la recursión no terminara y eventualmente provocaría un
+        // desbordamiento de pila.
     }
 }

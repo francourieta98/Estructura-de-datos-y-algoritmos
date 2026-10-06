@@ -30,11 +30,11 @@ public class MultiplicacionRecursiva {
 
     public static void main(String[] args) {
         int[][] pruebas = {
-            {0, 7},
-            {7, 0},
-            {4, 3},
-            {5, 2},
-            {6, 6}
+                { 0, 7 },
+                { 7, 0 },
+                { 4, 3 },
+                { 5, 2 },
+                { 6, 6 }
         };
 
         for (int[] prueba : pruebas) {
@@ -43,7 +43,8 @@ public class MultiplicacionRecursiva {
             System.out.println(a + " * " + b + " = " + multiplicar(a, b));
         }
 
-        // La recursión termina cuando uno de los factores es 0, porque la función devuelve 0.
+        // La recursión termina cuando uno de los factores es 0, porque la función
+        // devuelve 0.
         // Así se evita una llamada infinita y se garantiza la reducción del problema.
     }
 }

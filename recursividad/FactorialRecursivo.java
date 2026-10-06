@@ -25,13 +25,15 @@ public class FactorialRecursivo {
     }
 
     public static void main(String[] args) {
-        int[] valoresPrueba = {0, 1, 5, 7, 10};
+        int[] valoresPrueba = { 0, 1, 5, 7, 10 };
 
         for (int valor : valoresPrueba) {
             System.out.println("factorial(" + valor + ") = " + factorial(valor));
         }
 
-        // La recursión termina cuando n llega a 0 o 1, porque en ese caso se devuelve 1.
-        // Esto evita una llamada infinita y garantiza que el problema se reduzca de forma correcta.
+        // La recursión termina cuando n llega a 0 o 1, porque en ese caso se devuelve
+        // 1.
+        // Esto evita una llamada infinita y garantiza que el problema se reduzca de
+        // forma correcta.
     }
 }
